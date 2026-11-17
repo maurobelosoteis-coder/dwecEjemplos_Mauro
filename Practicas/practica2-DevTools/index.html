@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de notas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Calculadora de notas</h1>
+  </header>
+
+  <main>
+    <div class="tarjeta">
+      <form id="formulario">
+        <label for="examen">Nota del examen</label>
+        <input type="number" id="examen" min="0" max="10" step="0.01">
+
+        <label for="practica">Nota de la práctica</label>
+        <input type="number" id="practica" min="0" max="10" step="0.01">
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <p id="resultado"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por Mauro</p>
+  </footer>
+
+  <!-- El script va al final para que la página ya exista cuando se ejecute -->
+  <script src="calculadora.js"></script>
+</body>
+</html>
